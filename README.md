@@ -127,16 +127,15 @@ Build SentimentFlow from the source and intsall dependencies:
 Run the project with:
 
 ```sh
-❯ uvicorn main:app --reload
-❯ streamlit run app.py
+❯ uvicorn main:app --reload && streamlit run app.py
 ```
 
 ### Cleanup
 
-Press `Ctrl+C` to stop streamlit. Then, run the following command to stop the uvicorn server:
+Press `Ctrl+C` to stop streamlit. Then, run the following command to stop the uvicorn server that's running in the background:
 
 ```sh
-pkill -f uvicorn
+❯ pkill -f uvicorn
 ```
 
 Finally, deactivate the virtual environment:
