@@ -25,7 +25,7 @@
 </div>
 <br>
 
-Pitching & Demo Video: [https://youtu.be/FZyhQG6yK-k](https://youtu.be/FZyhQG6yK-k)
+Pitching & Demo Video: [https://www.youtube.com/watch?v=N0qN1znd71c](https://www.youtube.com/watch?v=N0qN1znd71c)
 
 ---
 
@@ -95,53 +95,61 @@ Build SentimentFlow from the source and intsall dependencies:
 1. **Clone the repository:**
 
     ```sh
-    ❯ git clone https://github.com/timmmtam/SentimentFlow
+    git clone https://github.com/timmmtam/SentimentFlow
     ```
 
 2. **Navigate to the project directory:**
 
     ```sh
-    ❯ cd SentimentFlow
+    cd SentimentFlow/src
     ```
 
 3. **Create Python Virtual Environment**
 
 	```sh
-	❯ python -m venv .venv
+	python -m venv .venv
 	```
 
 4. **Activate Python Virtual Environment**
 
 	```sh
-	❯ source .venv/bin/activate
+	source .venv/bin/activate
 	```
 
 5. **Install the dependencies:**
 
 	```sh
-	❯ pip install -r requirements.txt
+	pip install -r requirements.txt
 	```
+
+6. **Set API Key**
+
+```sh
+echo GEMINI_API_KEY=your-api-key >> .env
+```
 
 ### Usage
 
 Run the project with:
 
 ```sh
-❯ uvicorn main:app --reload && streamlit run app.py
+uvicorn main:app --reload
+```
+
+Open a new terminal, then run (after activating virtual environment):
+
+```sh
+streamlit run app.py
 ```
 
 ### Cleanup
 
-Press `Ctrl+C` to stop streamlit. Then, run the following command to stop the uvicorn server that's running in the background:
+Press `Ctrl+C` on both terminals to stop uvicorn and streamlit.
+
+Then, deactivate the virtual environment:
 
 ```sh
-❯ pkill -f uvicorn
-```
-
-Finally, deactivate the virtual environment:
-
-```sh
-❯ deactivate
+deactivate
 ```
 
 ---
