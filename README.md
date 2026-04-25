@@ -197,12 +197,6 @@ deactivate
 
 ---
 
-## License
-
-Sentimentflow is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
 <div align="right">
 
 [![][back-to-top]](#top)
