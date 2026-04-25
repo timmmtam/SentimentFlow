@@ -5,7 +5,7 @@ import re
 # Central API URL for the FastAPI backend
 API_URL = "http://localhost:8000"
 
-st.set_page_config(page_title="SentimentFlow AI", page_icon="🌊", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="SentimentFlow AI", page_icon="🌊", layout="wide", initial_sidebar_state="collapsed")
 
 # ==========================================
 # CUSTOM CSS FOR PREMIUM AESTHETICS
