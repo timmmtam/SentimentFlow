@@ -3,7 +3,7 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="./sentiflow.png" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+<img src="./assets/sentiflow.png" width="80%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
 
 # SENTIMENTFLOW
 
@@ -25,6 +25,8 @@
 </div>
 <br>
 
+Pitching & Demo Video: [https://youtu.be/FZyhQG6yK-k](https://youtu.be/FZyhQG6yK-k)
+
 ---
 
 ## Table of Contents
@@ -33,93 +35,47 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Project Structure](#project-structure)
-    - [Project Index](#project-index)
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Usage](#usage)
     - [Testing](#testing)
-- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ---
 
 ## Overview
 
+SentimentFlow is a cutting-edge platform designed to automate and optimize customer service workflows using advanced AI and Large Language Models (LLMs). It bridges the gap between raw user feedback and actionable business intelligence by combining deep sentiment analysis with intelligent task management.
 
+At its core, the system ingests unstructured data—such as reviews, messages, and support tickets—and processes them through a multi-stage pipeline. The "Brain" module dissects the content to understand not just the emotion (sentiment), but also the intent, urgency, and key topics. This intelligence is then used to automatically generate comprehensive case summaries, suggest appropriate resolutions, and assign priority levels.
+
+For businesses, SentimentFlow eliminates the need for manual review of every single customer interaction. It transforms a chaotic influx of data into a structured, prioritized queue of tasks, ensuring that critical issues are addressed immediately while maintaining a scalable support infrastructure. The platform is built with a modern, responsive interface, allowing administrators to monitor system health, review AI suggestions, and manage workflows with ease.
 
 ---
 
 ## Features
 
-<code>❯ REPLACE-ME</code>
+- **Advanced Sentiment Analysis**: Utilizes Gemini AI to analyze customer feedback, identifying not just positive or negative sentiment, but also detecting specific emotions like anger, frustration, or joy.
+- **Intelligent Case Management**: Automatically categorizes and prioritizes incoming messages. The system generates concise case summaries and suggests appropriate actions or resolutions, drastically reducing manual workload.
+- **Real-time Monitoring**: Provides a live dashboard to visualize incoming feedback volume, sentiment trends, and system health, allowing businesses to stay connected with their customer base instantly.
+- **Secure Admin Interface**: A protected admin portal enables authorized personnel to manage the system, review AI decisions, and ensure data privacy and integrity.
+- **Data Persistence**: Robust database management ensures that all customer interactions and analysis results are stored securely and are available for future review and auditing.
 
 ---
 
 ## Project Structure
 
 ```sh
-└── SentimentFlow/
-    ├── __pycache__
-    │   ├── brain.cpython-314.pyc
-    │   ├── database.cpython-314.pyc
-    │   └── main.cpython-314.pyc
+└── src/
     ├── app.py
     ├── brain.py
     ├── database.py
     ├── main.py
     ├── requirements.txt
-    ├── sentimentflow.db
     └── test_brain.py
 ```
-
-### Project Index
-
-<details open>
-	<summary><b><code>SENTIMENTFLOW/</code></b></summary>
-	<!-- __root__ Submodule -->
-	<details>
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ __root__</b></code>
-			<table style='width: 100%; border-collapse: collapse;'>
-			<thead>
-				<tr style='background-color: #f8f9fa;'>
-					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-					<th style='text-align: left; padding: 8px;'>Summary</th>
-				</tr>
-			</thead>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/timmmtam/SentimentFlow/blob/master/test_brain.py'>test_brain.py</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/timmmtam/SentimentFlow/blob/master/requirements.txt'>requirements.txt</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/timmmtam/SentimentFlow/blob/master/database.py'>database.py</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/timmmtam/SentimentFlow/blob/master/brain.py'>brain.py</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/timmmtam/SentimentFlow/blob/master/app.py'>app.py</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='https://github.com/timmmtam/SentimentFlow/blob/master/main.py'>main.py</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-			</table>
-		</blockquote>
-	</details>
-</details>
 
 ---
 
@@ -148,15 +104,19 @@ Build SentimentFlow from the source and intsall dependencies:
     ❯ cd SentimentFlow
     ```
 
-3. **Install the dependencies:**
+3. **Create Python Virtual Environment**
 
-<!-- SHIELDS BADGE CURRENTLY DISABLED -->
-	<!-- [![pip][pip-shield]][pip-link] -->
-	<!-- REFERENCE LINKS -->
-	<!-- [pip-shield]: https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white -->
-	<!-- [pip-link]: https://pypi.org/project/pip/ -->
+	```sh
+	❯ python -m venv .venv
+	```
 
-	**Using [pip](https://pypi.org/project/pip/):**
+4. **Activate Python Virtual Environment**
+
+	```sh
+	❯ source .venv/bin/activate
+	```
+
+5. **Install the dependencies:**
 
 	```sh
 	❯ pip install -r requirements.txt
@@ -166,27 +126,24 @@ Build SentimentFlow from the source and intsall dependencies:
 
 Run the project with:
 
-**Using [pip](https://pypi.org/project/pip/):**
 ```sh
-python {entrypoint}
+❯ uvicorn main:app --reload
+❯ streamlit run app.py
 ```
 
-### Testing
+### Cleanup
 
-Sentimentflow uses the {__test_framework__} test framework. Run the test suite with:
+Press `Ctrl+C` to stop streamlit. Then, run the following command to stop the uvicorn server:
 
-**Using [pip](https://pypi.org/project/pip/):**
 ```sh
-pytest
+pkill -f uvicorn
 ```
 
----
+Finally, deactivate the virtual environment:
 
-## Roadmap
-
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+```sh
+❯ deactivate
+```
 
 ---
 
@@ -238,10 +195,6 @@ pytest
 Sentimentflow is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
 ---
-
-## Acknowledgments
-
-- Credit `contributors`, `inspiration`, `references`, etc.
 
 <div align="right">
 
